@@ -1,0 +1,36 @@
+
+20120302
+ 计划将度量的范围统一到内核
+ 开始使用systemtap工具，该工具为内核探针工具，可以截获内核的指定函数
+ 熟悉systemtap工具的命令行使用方法，尝试使用简单的stap脚本
+20120309
+ 从源码搭建systemtap的使用环境
+ 进一步学习systemtap的wiki、以及<<Dynamic Tracing and Performance Analysis Using SystemTap>>文档
+ 掌握了systemtap的基本语法：赋值、循环语句、probe函数的基本写法
+20120316
+ 学习文档<<SystemTap: Instrumenting the Linux Kernel for Analyzing Performance and Functional Problems>>
+ 掌握了systemtap的begin, end, error, function关键字
+ 实践文档中的内容：写了截获sys_read, sys_write的stap脚本
+20120323
+ 学习文档<<SystemTap : Full System Observability for Linux>>
+ 掌握了systemtap的timer功能。为以后实现定时分析内核打下了基础。
+20120330
+ 学习systemtap的wiki，主要针对tapsets的部分内容。
+ 阅读了部分tapsets的stap代码，了解了syscall.*，process.*，socket.*的扩展部分。
+ 掌握了调用tapsets的接口。
+20120406
+ 学习了<<Observing HotSpot with SystemTap>>文档
+ 掌握了systemtap的系统函数库接口。
+20120413
+ 学习文档<<Ideas for Systemtap Scriptfest at OLS 2008>>
+ 学习了systemtap的Statistic功能。
+ 尝试实现stap脚本，实现该功能的典型用法：统计一段时间内某内核函数参数的内容取值分布。
+20120420
+ 阅读<<Understanding Linux Kernel>>的VFS相关章节。
+ 分析内核fs/*下文件与内核VFS部分的调用关系。
+ 理清VFS相关函数的调用流程，以便后续添加systemtap的probe点使用。
+20120427
+ 简略浏览fs/*下的ext4，vfat，ntfs等常用文件系统的代码。
+ 分析其在内核VFS中的注册流程。
+ 分析其inode.c文件中readpage与mmap接口，为后续添加probe点打下基础。
+
